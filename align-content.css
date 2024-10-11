@@ -14,40 +14,31 @@ body{
     background-color: tomato;
     text-align: center;
     font-size: 1.5em;
+    padding: 0 11px;
 }
 .container{
     display: flex;
     max-width: 420px;
     margin: 0 auto;
     border: 1px solid #ccc;
+    height: 300px;
+    flex-wrap: wrap;
 }
 .stretch{
-    align-items: stretch;
+    align-content: stretch;
 }
 .flex-start{
-    align-items: flex-start;
+    align-content: flex-start;
 }
 .flex-end{
-    align-items: flex-end;
+    align-content: flex-end;
 }
 .center{
-    align-items: center;
+    align-content: center;
 }
-.baseline{
-    align-items: baseline;
+.space-between{
+    align-content: space-between;
 }
-.item:first-child{
-    padding-top: 20px;
-}
-.column{
-    flex-direction: column;
-}
-.alinhamento-central .item{
-    flex: 0;
-    padding: 10px;
-}
-.alinhamento-central{
-    height: 400px;
-    justify-content: center;
-    align-items: center;
+.space-around{
+    align-content: space-around;
 }
