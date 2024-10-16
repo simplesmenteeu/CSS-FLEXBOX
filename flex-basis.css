@@ -13,6 +13,7 @@ body{
     background-color: tomato;
     text-align: center;
     font-size: 1.5em;
+    position: relative;
 }
 .container{
     display: flex;
@@ -20,11 +21,22 @@ body{
     margin: 0 auto;
     border: 1px solid #ccc;
 }
-.shrink-1{
-    flex-shrink: 1;
+.basis-auto{
     flex-grow: 1;
+    flex-basis: auto;
 }
-.shrink-3{
+.basis-auto-grow-2{ 
+    flex-grow: 2;
+    flex-basis: auto;
+}
+.basis-auto-width{
     flex-grow: 1;
-    flex-shrink: 3;
+    flex-basis: auto;
+    width: 60px;
+}
+.basis-auto-grow-0{
+    flex-basis: auto;
+}
+.overlay{
+    margin-top: 10px;
 }
